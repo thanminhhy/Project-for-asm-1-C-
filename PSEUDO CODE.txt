@@ -1,0 +1,28 @@
+START
+ PROGRAM SortAnArrayNumbers
+ INIT n,temp,i,arrNumbers
+ READ INPUT into n
+ FOR 0 through n - 1
+	PRINT element - 0
+	READ INPUT arrNumbers[0]
+ ENDFOR
+ PRINT ArraysOutput
+ FOR 0 through n - 1
+	PRINT The array at index 0 is arrNumbers[0]
+ ENDFOR
+ PRINT The array numbers after sorting are: 
+ FOR 0 through n - 1
+    FOR 1 through n -1 
+	IF(arrNumbers[0]>arrNumbers[1])
+		temp = arrNumbers[i];
+		arrNumbers[i] = arrNumbers[j];
+		arrNumbers[j]  = temp;
+	ENDIF
+    ENDFOR
+ ENDFOR
+ FOREACH <value> in <arrNumbers>
+	PRINT value
+ ENDFOREACH
+END
+ 
+ 
